@@ -1,11 +1,8 @@
 import React from "react";
+import "./App.css";
 
 const App = () => {
-  return React.createElement(
-    "a",
-    { href: "https://www.origamid.com" },
-    "Origamid",
-  );
+  return <a href="https://github.com/florencioMath">Matheus</a>;
 };
 
 export default App;
