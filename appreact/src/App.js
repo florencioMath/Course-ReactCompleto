@@ -1,93 +1,42 @@
 import React from "react";
 
-const App = () => {
-  const [response, setResponse] = React.useState(null);
-  const formFields = [
-    {
-      id: "nome",
-      label: "Nome",
-      type: "text",
-    },
-    {
-      id: "email",
-      label: "Email",
-      type: "email",
-    },
-    {
-      id: "senha",
-      label: "Senha",
-      type: "password",
-    },
-    {
-      id: "cep",
-      label: "Cep",
-      type: "text",
-    },
-    {
-      id: "rua",
-      label: "Rua",
-      type: "text",
-    },
-    {
-      id: "numero",
-      label: "Numero",
-      type: "text",
-    },
-    {
-      id: "bairro",
-      label: "Bairro",
-      type: "text",
-    },
-    {
-      id: "cidade",
-      label: "Cidade",
-      type: "text",
-    },
-    {
-      id: "estado",
-      label: "Estado",
-      type: "text",
-    },
-  ];
+const coresArray = ["azul", "roxo", "laranja", "verde", "vermelho", "cinza"];
 
-  const [form, setForm] = React.useState(
-    formFields.reduce((acc, field) => {
-      return { ...acc, [field.id]: "" };
-    }, {}),
-  );
+const App = () => {
+  const [cores, setCores] = React.useState([]);
 
   function handleChange({ target }) {
-    const { id, value } = target;
-    setForm({ ...form, [id]: value });
+    const { checked, value } = target;
+    if (checked) {
+      setCores([...cores, target.value]);
+    } else {
+      setCores(cores.filter((cor) => cor !== value));
+    }
   }
 
-  function handleSubmit(event) {
-    event.preventDefault();
-    fetch("https://ranekapi.origamid.dev/json/api/usuario", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(form),
-    }).then((response) => setResponse(response));
+  function handleChecked(cor) {
+    return cores.includes(cor);
   }
   return (
     <>
       <div>App React</div>
-      <form onSubmit={handleSubmit}>
-        {formFields.map(({ id, label, type }) => (
-          <div key={id}>
-            <label htmlFor={id}>{label}</label>
+      <form>
+        {coresArray.map((cor) => (
+          <label key={cor} style={{ textTransform: "capitalize" }}>
             <input
-              type={type}
-              id={id}
-              value={form[id]}
+              type="checkbox"
+              value={cor}
+              checked={handleChecked(cor)}
               onChange={handleChange}
             />
-          </div>
+            {cor}
+          </label>
         ))}
-        <button>Enviar</button>
-        {response && response.ok && <p>Usuário Criado!</p>}
+        <ul>
+          {cores.map((cor) => (
+            <li key={cor}>{cor}</li>
+          ))}
+        </ul>
       </form>
     </>
   );
