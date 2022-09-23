@@ -10,9 +10,9 @@ const User = () => {
     <section className="container">
       <UserHeader />
       <Routes>
-        <Route to="/" element={<Feed />} />
-        <Route to="postar" element={<UserPhotoPost />} />
-        <Route to="estatisticas" element={<UserStats />} />
+        <Route path="/" element={<Feed />} end />
+        <Route path="postar" element={<UserPhotoPost />} />
+        <Route path="estatisticas" element={<UserStats />} />
       </Routes>
     </section>
   );
