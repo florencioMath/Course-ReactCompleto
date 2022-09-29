@@ -60,6 +60,10 @@ a {
   z-index: 1;
 }
 
+.mainContainer {
+  margin-top: 4rem;
+}
+
 .title::after {
   content: "";
   display: block;
