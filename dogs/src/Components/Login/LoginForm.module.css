@@ -10,7 +10,7 @@
 }
 
 .perdeu::after {
-  content: "";
+  content: '';
   height: 2px;
   width: 100%;
   background: currentColor;
@@ -28,13 +28,13 @@
 }
 
 .subtitle {
-  font-family: var(--type--second);
+  font-family: var(--type-second);
   line-height: 1;
   font-size: 2rem;
 }
 
 .subtitle::after {
-  content: "";
+  content: '';
   display: block;
   background: #ddd;
   height: 0.5rem;

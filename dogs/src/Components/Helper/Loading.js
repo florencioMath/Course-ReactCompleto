@@ -1,5 +1,5 @@
-import React from "react";
-import styles from "./Loading.module.css";
+import React from 'react';
+import styles from './Loading.module.css';
 
 const Loading = () => {
   const [step, setStep] = React.useState(0);
@@ -17,9 +17,9 @@ const Loading = () => {
     };
   }, []);
 
-  function displayStep(index) {
+  function displayStep(i) {
     return {
-      display: step === index ? "block" : "none",
+      display: step === i ? 'block' : 'none',
     };
   }
 
