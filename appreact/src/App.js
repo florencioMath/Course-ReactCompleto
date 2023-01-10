@@ -14,7 +14,7 @@ const App = () => {
         <Header />
         <div className="content">
           <Routes>
-            <Route path="/" element={<Produtos />} />
+            <Route path={process.env.PUBLIC_URL + "/"} element={<Produtos />} />
             <Route path="produto/:id" element={<Produto />} />
             <Route path="contato" element={<Contato />} />
           </Routes>
