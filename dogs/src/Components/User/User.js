@@ -16,10 +16,7 @@ const User = () => {
       <Head title="Minha Conta" />
       <UserHeader />
       <Routes>
-        <Route
-          path={process.env.PUBLIC_URL + "/"}
-          element={<Feed user={data.id} />}
-        />
+        <Route path="/" element={<Feed user={data.id} />} />
         <Route path="postar" element={<UserPhotoPost />} />
         <Route path="estatisticas" element={<UserStats />} />
         <Route path="*" element={<NotFound />} />
