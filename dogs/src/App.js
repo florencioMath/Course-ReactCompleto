@@ -15,12 +15,12 @@ import NotFound from "./Components/NotFound";
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <UserStorage>
           <Header />
           <main className="AppBody">
             <Routes>
-              <Route path="/" element={<Home />} />
+              <Route path={process.env.PUBLIC_URL + "/"} element={<Home />} />
               <Route path="login/*" element={<Login />} />
               <Route
                 path="conta/*"
