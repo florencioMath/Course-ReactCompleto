@@ -10,11 +10,11 @@ import Produto from "./Components/Produto";
 const App = () => {
   return (
     <div className="App">
-      <BrowserRouter basename={process.env.PUBLIC_URL}>
+      <BrowserRouter>
         <Header />
         <div className="content">
           <Routes>
-            <Route path={process.env.PUBLIC_URL + "/"} element={<Produtos />} />
+            <Route element={<Produtos />} />
             <Route path="produto/:id" element={<Produto />} />
             <Route path="contato" element={<Contato />} />
           </Routes>
