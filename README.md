@@ -92,7 +92,7 @@ _Below is an example of how you can install and set up the app._
 
 You can click the deploy on Vercel or follow the steps bellow
 
-Deploy: <a href="https://thealuratube.vercel.app/">Aluratube</a> 
+Deploy: <a href="https://course-dogs.vercel.app/">Dog | Social Network</a> 
 
 1. Clone the repo
    ```sh
