@@ -1,6 +1,6 @@
 <a name="readme-top"></a>
 <div align="center">
-<img src="https://github.com/florencioMath/Course-ReactCompleto/blob/main/dogs/public/logo192.png?raw=true" alt="Aluratube logo" />
+<img src="https://github.com/florencioMath/Course-ReactCompleto/blob/main/readmeFiles/logoDogs.png?raw=true" alt="Aluratube logo" />
 </div>
 
 <!-- TABLE OF CONTENTS -->
@@ -43,32 +43,30 @@ This project was developed with the following technologies:
   <br>
   Under construction
   <tr>
-  <!--
     <td align="center">
-        <p align="center">Aluratube Home</p>
-      <img src="https://github.com/florencioMath/Project-AluraTube/blob/main/readmeFiles/aluratubeHome.gif?raw=true"  alt="Aluratube Home"/>
+        <p align="center">Dogs creating an account</p>
+      <img src="https://github.com/florencioMath/Course-ReactCompleto/blob/main/readmeFiles/dogCria%C3%A7%C3%A3oDeConta.gif?raw=true"  alt="Dogs creating an account"/>
     </td>
     <br>
     <td align="center">
-        <p align="center">Aluratube Add Video pt01</p>
-      <img src="https://github.com/florencioMath/Project-AluraTube/blob/main/readmeFiles/aluratubeAdicionandoVideo01.gif?raw=true" alt="Aluratube Add Video pt01" />
+        <p align="center">Dogs adding a photo</p>
+      <img src="https://github.com/florencioMath/Course-ReactCompleto/blob/main/readmeFiles/dogAdicionandoDog.gif?raw=true" alt="Dogs adding a photo" />
     </td>
     <br>
     <td align="center">
-        <p align="center">Aluratube Add Video pt02</p>
-      <img src="https://github.com/florencioMath/Project-AluraTube/blob/main/readmeFiles/aluratubeAdicionandoVideo02.gif?raw=true" alt="Aluratube Add Video pt02" />
+        <p align="center">Dogs adding a comentary</p>
+      <img src="https://github.com/florencioMath/Course-ReactCompleto/blob/main/readmeFiles/dogComentandoFotos.gif?raw=true" alt="Dogs adding a comentary" />
     </td>
     <br>
     <td align="center">
-        <p align="center">Aluratube Video Page</p>
-      <img src="https://github.com/florencioMath/Project-AluraTube/blob/main/readmeFiles/aluratubePaginaIndividualDoVideo.gif?raw=true" alt="Aluratube Video Page" />
+        <p align="center">Dogs statistics</p>
+      <img src="https://github.com/florencioMath/Course-ReactCompleto/blob/main/readmeFiles/dogEstatisticas.gif?raw=true" alt="Dogs statistics" />
     </td>
         <br>
     <td align="center">
-        <p align="center">Aluratube Video Search</p>
-      <img src="https://github.com/florencioMath/Project-AluraTube/blob/main/readmeFiles/aluratubeBuscaPorVideo.gif?raw=true" alt="Aluratube Video Search" />
+        <p align="center">Dogs deleting a photo</p>
+      <img src="https://github.com/florencioMath/Course-ReactCompleto/blob/main/readmeFiles/dogDeletandoFoto.gif?raw=true" alt="Dogs deleting a photo" />
     </td>
-    -->
   </tr>
   </details>
 
