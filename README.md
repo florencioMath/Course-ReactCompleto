@@ -41,7 +41,6 @@ This project was developed with the following technologies:
 <details>
 <summary>Take a look at how it turned out:</summary>
   <br>
-  Under construction
   <tr>
     <td align="center">
         <p align="center">Dogs creating an account</p>
